@@ -1,0 +1,6 @@
+|registrador_tipo_d
+clk => pout$latch.LATCH_ENABLE
+pin => pout$latch.DATAIN
+pout << pout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
