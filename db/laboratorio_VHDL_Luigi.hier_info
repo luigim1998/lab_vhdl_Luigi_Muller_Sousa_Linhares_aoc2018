@@ -1,0 +1,8 @@
+|JK_FF
+clock => state.CLK
+J => Mux0.IN4
+K => Mux0.IN5
+Q << state.DB_MAX_OUTPUT_PORT_TYPE
+Qbar << state.DB_MAX_OUTPUT_PORT_TYPE
+
+
