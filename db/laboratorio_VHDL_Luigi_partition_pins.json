@@ -4,15 +4,11 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "pout",
+					"name" : "R",
 					"strict" : false
 				},
 				{
-					"name" : "A",
-					"strict" : false
-				},
-				{
-					"name" : "B",
+					"name" : "P",
 					"strict" : false
 				}
 			]

@@ -1,6 +1,8 @@
-|PAnd
-A => pout.IN0
-B => pout.IN1
-pout << pout.DB_MAX_OUTPUT_PORT_TYPE
+|maquina_de_estados
+P => Mux1.IN1
+P => Mux1.IN2
+P => Mux1.IN3
+P => Mux2.IN3
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

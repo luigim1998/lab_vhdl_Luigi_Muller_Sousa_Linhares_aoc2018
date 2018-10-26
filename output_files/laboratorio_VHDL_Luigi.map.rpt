@@ -1,5 +1,5 @@
 Analysis & Synthesis report for laboratorio_VHDL_Luigi
-Thu Oct 25 20:07:34 2018
+Fri Oct 26 00:33:38 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -13,10 +13,11 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,14 +43,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 25 20:07:34 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 26 00:33:38 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; laboratorio_VHDL_Luigi                      ;
-; Top-level Entity Name           ; PAnd                                        ;
+; Top-level Entity Name           ; maquina_de_estados                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 3                                           ;
+; Total pins                      ; 2                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,7 +69,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value          ;
 +---------------------------------------------------------------------------------+--------------------+------------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                        ;
-; Top-level entity name                                                           ; PAnd               ; laboratorio_VHDL_Luigi ;
+; Top-level entity name                                                           ; maquina_de_estados ; laboratorio_VHDL_Luigi ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V              ;
 ; Use smart compilation                                                           ; Off                ; Off                    ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                     ;
@@ -158,57 +159,71 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; PAnd.vhd                         ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/PAnd.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; maquina_de_estados.vhd           ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimate of Logic utilization (ALMs needed) ; 1      ;
-;                                             ;        ;
-; Combinational ALUT usage for logic          ; 1      ;
-;     -- 7 input functions                    ; 0      ;
-;     -- 6 input functions                    ; 0      ;
-;     -- 5 input functions                    ; 0      ;
-;     -- 4 input functions                    ; 0      ;
-;     -- <=3 input functions                  ; 1      ;
-;                                             ;        ;
-; Dedicated logic registers                   ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 3      ;
-;                                             ;        ;
-; Total DSP Blocks                            ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; pout~0 ;
-; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 6      ;
-; Average fan-out                             ; 0.86   ;
-+---------------------------------------------+--------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 4         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 7         ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 7         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 2         ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; estado[0] ;
+; Maximum fan-out                             ; 5         ;
+; Total fan-out                               ; 22        ;
+; Average fan-out                             ; 2.00      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |PAnd                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 3    ; 0            ; |PAnd               ; PAnd        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name        ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------------+--------------+
+; |maquina_de_estados        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |maquina_de_estados ; maquina_de_estados ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; R$latch                                            ; Mux1                ; yes                    ;
+; estado[0]                                          ; Mux1                ; yes                    ;
+; estado[1]                                          ; Mux1                ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -231,13 +246,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         2 data inputs ; 1                           ;
-; boundary_port         ; 3                           ;
+; arriav_lcell_comb     ; 7                           ;
+;     normal            ; 7                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 5                           ;
+; boundary_port         ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -256,37 +272,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 25 20:07:12 2018
+    Info: Processing started: Fri Oct 26 00:33:24 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off laboratorio_VHDL_Luigi -c laboratorio_VHDL_Luigi
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file maquina_de_estados.vhd
+    Info (12022): Found design unit 1: maquina_de_estados-behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 9
+    Info (12023): Found entity 1: maquina_de_estados File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_tipo_jk.vhd
+    Info (12022): Found design unit 1: registrador_tipo_jk-behv File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/registrador_tipo_jk.vhd Line: 11
+    Info (12023): Found entity 1: registrador_tipo_jk File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/registrador_tipo_jk.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registrador_tipo_d.vhd
     Info (12022): Found design unit 1: registrador_tipo_d-behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/registrador_tipo_d.vhd Line: 11
     Info (12023): Found entity 1: registrador_tipo_d File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/registrador_tipo_d.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file pnot.vhd
     Info (12022): Found design unit 1: PNot-behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/PNot.vhd Line: 10
     Info (12023): Found entity 1: PNot File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/PNot.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file jk_ff.vhd
-    Info (12022): Found design unit 1: JK_FF-behv File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/JK_FF.vhd Line: 10
-    Info (12023): Found entity 1: JK_FF File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/JK_FF.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file pand.vhd
     Info (12022): Found design unit 1: PAnd-behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/PAnd.vhd Line: 9
     Info (12023): Found entity 1: PAnd File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/PAnd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file por.vhd
     Info (12022): Found design unit 1: POr-behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/POr.vhd Line: 9
     Info (12023): Found entity 1: POr File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/POr.vhd Line: 4
-Info (12127): Elaborating entity "PAnd" for the top level hierarchy
+Info (12127): Elaborating entity "maquina_de_estados" for the top level hierarchy
+Warning (10631): VHDL Process Statement warning at maquina_de_estados.vhd(17): inferring latch(es) for signal or variable "estado", which holds its previous value in one or more paths through the process File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at maquina_de_estados.vhd(17): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Info (10041): Inferred latch for "R" at maquina_de_estados.vhd(17) File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Info (10041): Inferred latch for "estado[0]" at maquina_de_estados.vhd(17) File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Info (10041): Inferred latch for "estado[1]" at maquina_de_estados.vhd(17) File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Warning (13012): Latch R$latch has unsafe behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estado[0] File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Warning (13012): Latch estado[0] has unsafe behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estado[0] File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+Warning (13012): Latch estado[1] has unsafe behavior File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estado[0] File: C:/Trabalhos_AOC/lab_vhdl_Luigi_Muller_Sousa_Linhares_aoc2018/maquina_de_estados.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Thu Oct 25 20:07:34 2018
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:39
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Fri Oct 26 00:33:38 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 

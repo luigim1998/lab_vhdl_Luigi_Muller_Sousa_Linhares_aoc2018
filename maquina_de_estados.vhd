@@ -1,5 +1,5 @@
 Library ieee;
-use ieee_std_logic.all;
+use ieee.std_logic_1164.all;
 
 ENTITY maquina_de_estados IS
 	PORT(P: IN STD_LOGIC;
@@ -14,12 +14,33 @@ ARCHITECTURE behavior of maquina_de_estados IS
 	--"11" para D
 	SIGNAL saida: STD_LOGIC;
 BEGIN
-abc: PROCESS(P)
+abc: PROCESS(estado, P)
+	BEGIN
 	CASE (estado) IS
 		WHEN "00" =>
 			IF (P = '1') THEN
-				estado := "01";
+				estado <= "01";
 				R <= '0';
+			END IF;
 		WHEN "01" =>
-	END CASE
-END PROCESS;
+			IF (P = '1') THEN
+				estado <= "10";
+				R <= '0';
+			END IF;
+		WHEN "10" =>
+			IF (P = '1') THEN
+				estado <= "11";
+				R <= '1';
+			END IF;
+		WHEN "11" =>
+			CASE (P) IS
+				WHEN '0' =>
+					estado <= "00";
+					R <= '0';
+				WHEN '1'=>
+					estado <= "01";
+					R <= '0';
+			END CASE;
+	END CASE;
+END PROCESS abc;
+END behavior;
