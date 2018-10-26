@@ -1,7 +1,7 @@
 # do laboratorio_VHDL_Luigi.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:25:07 on Oct 25,2018
+# Start time: 11:42:37 on Oct 26,2018
 # vcom -work work laboratorio_VHDL_Luigi.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -11,36 +11,36 @@
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity PAnd
-# -- Compiling architecture structure of PAnd
-# End time: 20:25:07 on Oct 25,2018, Elapsed time: 0:00:00
+# -- Compiling entity maquina_de_estados
+# -- Compiling architecture structure of maquina_de_estados
+# End time: 11:42:37 on Oct 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:25:07 on Oct 25,2018
-# vcom -work work PAnd.vwf.vht 
+# Start time: 11:42:37 on Oct 26,2018
+# vcom -work work maquina_de_estados.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity PAnd_vhd_vec_tst
-# -- Compiling architecture PAnd_arch of PAnd_vhd_vec_tst
-# End time: 20:25:07 on Oct 25,2018, Elapsed time: 0:00:00
+# -- Compiling entity maquina_de_estados_vhd_vec_tst
+# -- Compiling architecture maquina_de_estados_arch of maquina_de_estados_vhd_vec_tst
+# End time: 11:42:37 on Oct 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.PAnd_vhd_vec_tst 
-# Start time: 20:25:07 on Oct 25,2018
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.maquina_de_estados_vhd_vec_tst 
+# Start time: 11:42:37 on Oct 26,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.pand_vhd_vec_tst(pand_arch)
+# Loading work.maquina_de_estados_vhd_vec_tst(maquina_de_estados_arch)
 # Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.pand(structure)
+# Loading work.maquina_de_estados(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # after#32
-# End time: 20:25:08 on Oct 25,2018, Elapsed time: 0:00:01
+# End time: 11:42:37 on Oct 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
