@@ -1,13 +1,13 @@
 library ieee; use ieee.std_logic_1164.all;
 
-entity JK_FF is 
+entity registrador_tipo_jk is 
 	port ( clock: in std_logic;
 	J, K: in std_logic;
 	--reset: in std_logic;
 	Q, Qbar: out std_logic );
-end JK_FF;
+end registrador_tipo_jk;
 
-architecture behv of JK_FF is
+architecture behv of registrador_tipo_jk is
 
    signal state: std_logic;
    signal input: std_logic_vector(1 downto 0);
