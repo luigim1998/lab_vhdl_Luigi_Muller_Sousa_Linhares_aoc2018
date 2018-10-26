@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "10/25/2018 17:36:26"
+-- DATE "10/25/2018 20:09:17"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -26,34 +26,28 @@
 -- This VHDL file should be used for ModelSim-Altera (VHDL) only
 -- 
 
-LIBRARY ALTERA;
 LIBRARY ALTERA_LNSIM;
 LIBRARY CYCLONEV;
 LIBRARY IEEE;
-USE ALTERA.ALTERA_PRIMITIVES_COMPONENTS.ALL;
 USE ALTERA_LNSIM.ALTERA_LNSIM_COMPONENTS.ALL;
 USE CYCLONEV.CYCLONEV_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	JK_FF IS
+ENTITY 	PAnd IS
     PORT (
-	clock : IN std_logic;
-	J : IN std_logic;
-	K : IN std_logic;
-	Q : BUFFER std_logic;
-	Qbar : BUFFER std_logic
+	A : IN std_logic;
+	B : IN std_logic;
+	pout : BUFFER std_logic
 	);
-END JK_FF;
+END PAnd;
 
 -- Design Ports Information
--- Q	=>  Location: PIN_M6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Qbar	=>  Location: PIN_M7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- J	=>  Location: PIN_V6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- K	=>  Location: PIN_P7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- clock	=>  Location: PIN_R7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- pout	=>  Location: PIN_R16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A	=>  Location: PIN_P22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B	=>  Location: PIN_R21,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF JK_FF IS
+ARCHITECTURE structure OF PAnd IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -63,40 +57,29 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_clock : std_logic;
-SIGNAL ww_J : std_logic;
-SIGNAL ww_K : std_logic;
-SIGNAL ww_Q : std_logic;
-SIGNAL ww_Qbar : std_logic;
+SIGNAL ww_A : std_logic;
+SIGNAL ww_B : std_logic;
+SIGNAL ww_pout : std_logic;
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
-SIGNAL \clock~input_o\ : std_logic;
-SIGNAL \K~input_o\ : std_logic;
-SIGNAL \J~input_o\ : std_logic;
-SIGNAL \Mux0~0_combout\ : std_logic;
-SIGNAL \state~feeder_combout\ : std_logic;
-SIGNAL \state~q\ : std_logic;
-SIGNAL \ALT_INV_K~input_o\ : std_logic;
-SIGNAL \ALT_INV_J~input_o\ : std_logic;
-SIGNAL \ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \ALT_INV_state~q\ : std_logic;
+SIGNAL \B~input_o\ : std_logic;
+SIGNAL \A~input_o\ : std_logic;
+SIGNAL \pout~0_combout\ : std_logic;
+SIGNAL \ALT_INV_B~input_o\ : std_logic;
+SIGNAL \ALT_INV_A~input_o\ : std_logic;
 
 BEGIN
 
-ww_clock <= clock;
-ww_J <= J;
-ww_K <= K;
-Q <= ww_Q;
-Qbar <= ww_Qbar;
+ww_A <= A;
+ww_B <= B;
+pout <= ww_pout;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_K~input_o\ <= NOT \K~input_o\;
-\ALT_INV_J~input_o\ <= NOT \J~input_o\;
-\ALT_INV_Mux0~0_combout\ <= NOT \Mux0~0_combout\;
-\ALT_INV_state~q\ <= NOT \state~q\;
+\ALT_INV_B~input_o\ <= NOT \B~input_o\;
+\ALT_INV_A~input_o\ <= NOT \A~input_o\;
 
--- Location: IOOBUF_X8_Y0_N19
-\Q~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y8_N5
+\pout~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -104,103 +87,49 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \state~q\,
+	i => \pout~0_combout\,
 	devoe => ww_devoe,
-	o => ww_Q);
+	o => ww_pout);
 
--- Location: IOOBUF_X8_Y0_N2
-\Qbar~output\ : cyclonev_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false",
-	shift_series_termination_control => "false")
--- pragma translate_on
-PORT MAP (
-	i => \ALT_INV_state~q\,
-	devoe => ww_devoe,
-	o => ww_Qbar);
-
--- Location: IOIBUF_X8_Y0_N52
-\clock~input\ : cyclonev_io_ibuf
+-- Location: IOIBUF_X89_Y8_N38
+\B~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_clock,
-	o => \clock~input_o\);
+	i => ww_B,
+	o => \B~input_o\);
 
--- Location: IOIBUF_X8_Y0_N35
-\K~input\ : cyclonev_io_ibuf
+-- Location: IOIBUF_X89_Y8_N55
+\A~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_K,
-	o => \K~input_o\);
+	i => ww_A,
+	o => \A~input_o\);
 
--- Location: IOIBUF_X6_Y0_N35
-\J~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_J,
-	o => \J~input_o\);
-
--- Location: LABCELL_X9_Y1_N51
-\Mux0~0\ : cyclonev_lcell_comb
+-- Location: LABCELL_X88_Y8_N0
+\pout~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Mux0~0_combout\ = ( \J~input_o\ & ( \state~q\ & ( !\K~input_o\ ) ) ) # ( !\J~input_o\ & ( \state~q\ & ( !\K~input_o\ ) ) ) # ( \J~input_o\ & ( !\state~q\ ) )
+-- \pout~0_combout\ = ( \A~input_o\ & ( \B~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111111110000111100001111000011110000",
+	lut_mask => "0000000000000000001100110011001100000000000000000011001100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \ALT_INV_K~input_o\,
-	datae => \ALT_INV_J~input_o\,
-	dataf => \ALT_INV_state~q\,
-	combout => \Mux0~0_combout\);
+	datab => \ALT_INV_B~input_o\,
+	datae => \ALT_INV_A~input_o\,
+	combout => \pout~0_combout\);
 
--- Location: LABCELL_X9_Y1_N42
-\state~feeder\ : cyclonev_lcell_comb
--- Equation(s):
--- \state~feeder_combout\ = ( \Mux0~0_combout\ )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000011111111111111111111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataf => \ALT_INV_Mux0~0_combout\,
-	combout => \state~feeder_combout\);
-
--- Location: FF_X9_Y1_N44
-state : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \clock~input_o\,
-	d => \state~feeder_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \state~q\);
-
--- Location: LABCELL_X9_Y42_N3
+-- Location: LABCELL_X64_Y15_N3
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
 -- Equation(s):
 
