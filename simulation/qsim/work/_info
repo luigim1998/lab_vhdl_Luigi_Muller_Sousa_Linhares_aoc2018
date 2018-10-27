@@ -101,7 +101,191 @@ R24
 R18
 R19
 Emaquina_de_estados
-Z25 w1540568556
+Z25 w1540597747
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R0
+R11
+R12
+l0
+L38
+V546VXAUBW0=U:PohJ6aFY3
+!s100 _KD`lldg@mP^e7igV?3P>3
+R13
+32
+Z26 !s110 1540597748
+!i10b 1
+Z27 !s108 1540597748.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 18 maquina_de_estados 0 22 546VXAUBW0=U:PohJ6aFY3
+l83
+L52
+V:z^eR_gK4z:ie_f<QEiMl1
+!s100 ik_RDeKjZ9JT;cA9BLBVj1
+R13
+32
+R26
+!i10b 1
+R27
+R16
+R17
+!i113 1
+R18
+R19
+Emaquina_de_estados_copia
+Z28 w1540599158
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R0
+R11
+R12
+l0
+L38
+VP>CM^WRdScSBT74SDR[No2
+!s100 2CRFNio1dDPU[GIJLL5?i2
+R13
+32
+Z29 !s110 1540599160
+!i10b 1
+Z30 !s108 1540599160.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 24 maquina_de_estados_copia 0 22 P>CM^WRdScSBT74SDR[No2
+l83
+L52
+VBAackDCDP648I=nT776C31
+!s100 Nh^PPCH;159PK`TLD2ecA2
+R13
+32
+R29
+!i10b 1
+R30
+R16
+R17
+!i113 1
+R18
+R19
+Emaquina_de_estados_copia_vhd_vec_tst
+Z31 w1540599156
+R8
+R9
+R0
+Z32 8maquina_de_estados_copia.vwf.vht
+Z33 Fmaquina_de_estados_copia.vwf.vht
+l0
+L31
+V_z^iBl`ANjhV51I_2Sd[_2
+!s100 ChF=lW?V2@IN@N9:XWYGD0
+R13
+32
+R29
+!i10b 1
+R30
+Z34 !s90 -work|work|maquina_de_estados_copia.vwf.vht|
+Z35 !s107 maquina_de_estados_copia.vwf.vht|
+!i113 1
+R18
+R19
+Amaquina_de_estados_copia_arch
+R8
+R9
+DEx4 work 36 maquina_de_estados_copia_vhd_vec_tst 0 22 _z^iBl`ANjhV51I_2Sd[_2
+l46
+L33
+V?g31zjeB1knbGSFhWElPc1
+!s100 1d7d_eni^5JPY_R<7=6l_0
+R13
+32
+R29
+!i10b 1
+R30
+R34
+R35
+!i113 1
+R18
+R19
+Emaquina_de_estados_vhd_vec_tst
+Z36 w1540597744
+R8
+R9
+R0
+Z37 8maquina_de_estados.vwf.vht
+Z38 Fmaquina_de_estados.vwf.vht
+l0
+L31
+Vbo?b1=?QAHzeWIN^2k_U21
+!s100 F_O0MF^g]SOZXJelK8N?j3
+R13
+32
+R26
+!i10b 1
+R27
+Z39 !s90 -work|work|maquina_de_estados.vwf.vht|
+Z40 !s107 maquina_de_estados.vwf.vht|
+!i113 1
+R18
+R19
+Amaquina_de_estados_arch
+R8
+R9
+DEx4 work 30 maquina_de_estados_vhd_vec_tst 0 22 bo?b1=?QAHzeWIN^2k_U21
+l46
+L33
+VWAE8@RPh947jAl5V4P6]33
+!s100 >OL6DO^Q@<D^``R_=[^hF2
+R13
+32
+R26
+!i10b 1
+R27
+R39
+R40
+!i113 1
+R18
+R19
+Ememoria_ram_16_bits
+Z41 w1540604449
 R5
 R2
 R7
@@ -114,13 +298,13 @@ R11
 R12
 l0
 L36
-Vd:M7iC:3lXUE6QS3>QUKK0
-!s100 6bF^QX]W?:MiLz0A?;Db]0
+VaG;Rk[_[fZo8lJ78Y40jC3
+!s100 CD;?OXHeY4OH0W]54DVUS1
 R13
 32
-Z26 !s110 1540568557
+Z42 !s110 1540604450
 !i10b 1
-Z27 !s108 1540568557.000000
+Z43 !s108 1540604450.000000
 R16
 R17
 !i113 1
@@ -134,62 +318,152 @@ R3
 R8
 R9
 R4
-DEx4 work 18 maquina_de_estados 0 22 d:M7iC:3lXUE6QS3>QUKK0
-l76
-L48
-V6YUmFCJ@@Ik9EflEM9:DI3
-!s100 RBRB1VZe7hUO81Xf>Xg<Q3
+DEx4 work 19 memoria_ram_16_bits 0 22 aG;Rk[_[fZo8lJ78Y40jC3
+l296
+L58
+V5jDFFA?GA]lBWA<Hc5Bh91
+!s100 76TKMd3B60?@CTWJkAWjZ2
 R13
 32
-R26
+R42
 !i10b 1
-R27
+R43
 R16
 R17
 !i113 1
 R18
 R19
-Emaquina_de_estados_vhd_vec_tst
-Z28 w1540568553
+Ememoria_ram_16_bits_vhd_vec_tst
+Z44 w1540604446
 R8
 R9
 R0
-Z29 8maquina_de_estados.vwf.vht
-Z30 Fmaquina_de_estados.vwf.vht
+Z45 8memoria_ram_16_bits.vwf.vht
+Z46 Fmemoria_ram_16_bits.vwf.vht
 l0
 L31
-Vbo?b1=?QAHzeWIN^2k_U21
-!s100 F_O0MF^g]SOZXJelK8N?j3
+VHKf3DU0^39iYfQeeP]E_<3
+!s100 @hmBFUee^ScBmVeG]Xh]n2
 R13
 32
-R26
+R42
 !i10b 1
-R27
-Z31 !s90 -work|work|maquina_de_estados.vwf.vht|
-Z32 !s107 maquina_de_estados.vwf.vht|
+R43
+Z47 !s90 -work|work|memoria_ram_16_bits.vwf.vht|
+Z48 !s107 memoria_ram_16_bits.vwf.vht|
 !i113 1
 R18
 R19
-Amaquina_de_estados_arch
+Amemoria_ram_16_bits_arch
 R8
 R9
-Z33 DEx4 work 30 maquina_de_estados_vhd_vec_tst 0 22 bo?b1=?QAHzeWIN^2k_U21
-l44
+DEx4 work 31 memoria_ram_16_bits_vhd_vec_tst 0 22 HKf3DU0^39iYfQeeP]E_<3
+l48
 L33
-Z34 VAC?OzicaZnY^O6C>m=:9S0
-Z35 !s100 oi^mWfNgPILhezPI2HBkT2
+V0aF0A53YH3TAzi5dOa@Q`2
+!s100 kI5MEGgcBkn`Qa8C6iJT?1
 R13
 32
-R26
+R42
 !i10b 1
-R27
-R31
-R32
+R43
+R47
+R48
+!i113 1
+R18
+R19
+Ememoria_rom_16_bits
+Z49 w1540605815
+Z50 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R5
+R2
+R7
+R3
+R8
+R9
+R4
+R0
+R11
+R12
+l0
+L37
+VUaR^Sib7aC_Mg7MMjeA@e0
+!s100 diPcFFQbJKIzUkZG5;o2z2
+R13
+32
+Z51 !s110 1540605816
+!i10b 1
+Z52 !s108 1540605816.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R50
+R5
+R2
+R7
+R3
+R8
+R9
+R4
+DEx4 work 19 memoria_rom_16_bits 0 22 UaR^Sib7aC_Mg7MMjeA@e0
+l92
+L70
+V?;dzllNgH19HNJcHNN_FI0
+!s100 o`93JBNlH]6ImfmE4=zDg0
+R13
+32
+R51
+!i10b 1
+R52
+R16
+R17
+!i113 1
+R18
+R19
+Ememoria_rom_16_bits_vhd_vec_tst
+Z53 w1540605811
+R8
+R9
+R0
+Z54 8memoria_ROM_16_bits.vwf.vht
+Z55 Fmemoria_ROM_16_bits.vwf.vht
+l0
+L31
+VAGQX:58@8FOSQda=:3[RN1
+!s100 chBmHWa1P18[:i>mXhYQ[3
+R13
+32
+Z56 !s110 1540605817
+!i10b 1
+Z57 !s108 1540605817.000000
+Z58 !s90 -work|work|memoria_ROM_16_bits.vwf.vht|
+Z59 !s107 memoria_ROM_16_bits.vwf.vht|
+!i113 1
+R18
+R19
+Amemoria_rom_16_bits_arch
+R8
+R9
+Z60 DEx4 work 31 memoria_rom_16_bits_vhd_vec_tst 0 22 AGQX:58@8FOSQda=:3[RN1
+l46
+L33
+Z61 Vd30UB:[5b@FkB5HcEam_>2
+Z62 !s100 kCUk5KZ@U0kF9i=9D[YO12
+R13
+32
+R56
+!i10b 1
+R57
+R58
+R59
 !i113 1
 R18
 R19
 Epand
-Z36 w1540513506
+Z63 w1540513506
 R5
 R2
 R7
@@ -206,9 +480,9 @@ V]_NfzAS>nmUAD84bE;GT42
 !s100 hT31J?c:IhdN`N>g6FH<=0
 R13
 32
-Z37 !s110 1540513507
+Z64 !s110 1540513507
 !i10b 1
-Z38 !s108 1540513507.000000
+Z65 !s108 1540513507.000000
 R16
 R17
 !i113 1
@@ -229,32 +503,32 @@ VdHg5Be7H?4T25KOBD3PO70
 !s100 0[TYf;HULg4[>e[z8liY53
 R13
 32
-R37
+R64
 !i10b 1
-R38
+R65
 R16
 R17
 !i113 1
 R18
 R19
 Epand_vhd_vec_tst
-Z39 w1540513504
+Z66 w1540513504
 R8
 R9
 R0
-Z40 8PAnd.vwf.vht
-Z41 FPAnd.vwf.vht
+Z67 8PAnd.vwf.vht
+Z68 FPAnd.vwf.vht
 l0
 L31
 VBM6i<Hlb?J2RIjP<b@Dz^1
 !s100 7h5:>M;NnZiBjHYf]5Mf<2
 R13
 32
-R37
+R64
 !i10b 1
-R38
-Z42 !s90 -work|work|PAnd.vwf.vht|
-Z43 !s107 PAnd.vwf.vht|
+R65
+Z69 !s90 -work|work|PAnd.vwf.vht|
+Z70 !s107 PAnd.vwf.vht|
 !i113 1
 R18
 R19
@@ -268,16 +542,16 @@ V@X7;9l[LcHn^`KNENi3ML3
 !s100 EJ0]CfLY?MV>CZ_Pk?DRd1
 R13
 32
-R37
+R64
 !i10b 1
-R38
-R42
-R43
+R65
+R69
+R70
 !i113 1
 R18
 R19
 Epnot
-Z44 w1540510365
+Z71 w1540510365
 R5
 R2
 R7
@@ -294,9 +568,9 @@ V8G7aT9MAbc?;?g`9>`7U93
 !s100 53jB?n=@1^FEzn0b5_kIE1
 R13
 32
-Z45 !s110 1540510366
+Z72 !s110 1540510366
 !i10b 1
-Z46 !s108 1540510366.000000
+Z73 !s108 1540510366.000000
 R16
 R17
 !i113 1
@@ -317,32 +591,32 @@ VVkReJ0KU9LiI2S;8J=VOJ0
 !s100 Z]h8@19CBgSLZA><B6FFJ0
 R13
 32
-R45
+R72
 !i10b 1
-R46
+R73
 R16
 R17
 !i113 1
 R18
 R19
 Epnot_vhd_vec_tst
-Z47 w1540510361
+Z74 w1540510361
 R8
 R9
 R0
-Z48 8PNot.vwf.vht
-Z49 FPNot.vwf.vht
+Z75 8PNot.vwf.vht
+Z76 FPNot.vwf.vht
 l0
 L31
 VKoF<8`D@2CGaJgVL1Vemm0
 !s100 N5EW8RcVU_DoPji2l4``V1
 R13
 32
-R45
+R72
 !i10b 1
-R46
-Z50 !s90 -work|work|PNot.vwf.vht|
-Z51 !s107 PNot.vwf.vht|
+R73
+Z77 !s90 -work|work|PNot.vwf.vht|
+Z78 !s107 PNot.vwf.vht|
 !i113 1
 R18
 R19
@@ -356,16 +630,16 @@ VXm]7:W?mg4ZlKmCI`f0eY1
 !s100 fRgi:@`EG_G6:oj2fj2Zb2
 R13
 32
-R45
+R72
 !i10b 1
-R46
-R50
-R51
+R73
+R77
+R78
 !i113 1
 R18
 R19
 Epor
-Z52 w1540512289
+Z79 w1540512289
 R5
 R2
 R7
@@ -382,9 +656,9 @@ VAG1ck@B?I>0KY`NVYADNP0
 !s100 l4KUlNQXnhTflPWSL=2FJ1
 R13
 32
-Z53 !s110 1540512290
+Z80 !s110 1540512290
 !i10b 1
-Z54 !s108 1540512290.000000
+Z81 !s108 1540512290.000000
 R16
 R17
 !i113 1
@@ -405,32 +679,32 @@ VoDcK6;0c8:co5NY0o<G3P0
 !s100 Fno2DT^18aY];QF[VEgEN3
 R13
 32
-R53
+R80
 !i10b 1
-R54
+R81
 R16
 R17
 !i113 1
 R18
 R19
 Epor_vhd_vec_tst
-Z55 w1540512286
+Z82 w1540512286
 R8
 R9
 R0
-Z56 8POr.vwf.vht
-Z57 FPOr.vwf.vht
+Z83 8POr.vwf.vht
+Z84 FPOr.vwf.vht
 l0
 L31
 VG6]Y<<HVb7fiCVF:n]zS50
 !s100 H9jZmMzlGGP67mnoDT=jK1
 R13
 32
-R53
+R80
 !i10b 1
-R54
-Z58 !s90 -work|work|POr.vwf.vht|
-Z59 !s107 POr.vwf.vht|
+R81
+Z85 !s90 -work|work|POr.vwf.vht|
+Z86 !s107 POr.vwf.vht|
 !i113 1
 R18
 R19
@@ -444,16 +718,16 @@ V6eLXaHi[D^hgPh:h7N2hh2
 !s100 E0Sh]b6ZX_koW6M;76R3j3
 R13
 32
-R53
+R80
 !i10b 1
-R54
-R58
-R59
+R81
+R85
+R86
 !i113 1
 R18
 R19
 Eregistrador_tipo_d
-Z60 w1540511026
+Z87 w1540595507
 R5
 R2
 R7
@@ -466,13 +740,13 @@ R11
 R12
 l0
 L36
-V@1?PQFOQ_:?id3naC==jS0
-!s100 6_PXX83=4=>D_Mz52:OL00
+V<5__[k^:FiWTXz8gPCiIb1
+!s100 S:DZNNddZaBOdceAmkY053
 R13
 32
-Z61 !s110 1540511027
+Z88 !s110 1540595508
 !i10b 1
-Z62 !s108 1540511027.000000
+Z89 !s108 1540595508.000000
 R16
 R17
 !i113 1
@@ -486,39 +760,39 @@ R3
 R8
 R9
 R4
-DEx4 work 18 registrador_tipo_d 0 22 @1?PQFOQ_:?id3naC==jS0
+DEx4 work 18 registrador_tipo_d 0 22 <5__[k^:FiWTXz8gPCiIb1
 l71
 L50
 VY?mSJeG;56SC1`OhK:^hh2
 !s100 2Je5NeEmf637kDTd=`SD13
 R13
 32
-R61
+R88
 !i10b 1
-R62
+R89
 R16
 R17
 !i113 1
 R18
 R19
 Eregistrador_tipo_d_vhd_vec_tst
-Z63 w1540511024
+Z90 w1540595505
 R8
 R9
 R0
-Z64 8registrador_tipo_d.vwf.vht
-Z65 Fregistrador_tipo_d.vwf.vht
+Z91 8registrador_tipo_d.vwf.vht
+Z92 Fregistrador_tipo_d.vwf.vht
 l0
 L31
 VCUJG5R=GN7;^BNoa_eThS0
 !s100 GN2JU@jR;0EfF8HCH>a=W0
 R13
 32
-R61
+Z93 !s110 1540595509
 !i10b 1
-R62
-Z66 !s90 -work|work|registrador_tipo_d.vwf.vht|
-Z67 !s107 registrador_tipo_d.vwf.vht|
+Z94 !s108 1540595509.000000
+Z95 !s90 -work|work|registrador_tipo_d.vwf.vht|
+Z96 !s107 registrador_tipo_d.vwf.vht|
 !i113 1
 R18
 R19
@@ -528,15 +802,107 @@ R9
 DEx4 work 30 registrador_tipo_d_vhd_vec_tst 0 22 CUJG5R=GN7;^BNoa_eThS0
 l46
 L33
-VeUS5XYZH13<Z6RdAeH]9D1
-!s100 7c^@SX0bgbVi1_[1C2G4;3
+V9;0GRj@QB=E]l`[AQ:=Jc2
+!s100 j0oGhT<o6AUUCPmVTMaOk0
 R13
 32
-R61
+R93
 !i10b 1
-R62
-R66
-R67
+R94
+R95
+R96
+!i113 1
+R18
+R19
+Eregistrador_tipo_jk
+Z97 w1540597398
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R0
+R11
+R12
+l0
+L38
+V?0n8[e6hbcB3hf1m;W8]U1
+!s100 0d23<Cf8gk:o9DddOh[:c1
+R13
+32
+Z98 !s110 1540597403
+!i10b 1
+Z99 !s108 1540597402.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 19 registrador_tipo_jk 0 22 ?0n8[e6hbcB3hf1m;W8]U1
+l83
+L56
+V80I4]`P8m9`_2e`::C]PG1
+!s100 6l0nF^Q=cPS[@@ADgB4k43
+R13
+32
+R98
+!i10b 1
+R99
+R16
+R17
+!i113 1
+R18
+R19
+Eregistrador_tipo_jk_vhd_vec_tst
+Z100 w1540597395
+R8
+R9
+R0
+Z101 8registrador_tipo_jk.vwf.vht
+Z102 Fregistrador_tipo_jk.vwf.vht
+l0
+L31
+Ve91A]cY`XJ2bh1]_F:9Hd2
+!s100 _5W9;ahUB@4]GTXQXe`RF2
+R13
+32
+R98
+!i10b 1
+Z103 !s108 1540597403.000000
+Z104 !s90 -work|work|registrador_tipo_jk.vwf.vht|
+Z105 !s107 registrador_tipo_jk.vwf.vht|
+!i113 1
+R18
+R19
+Aregistrador_tipo_jk_arch
+R8
+R9
+DEx4 work 31 registrador_tipo_jk_vhd_vec_tst 0 22 e91A]cY`XJ2bh1]_F:9Hd2
+l50
+L33
+VilLah@YDHJ`SYf8@oR7C91
+!s100 R1J;n9<R`@e;DOKzke?023
+R13
+32
+R98
+!i10b 1
+R103
+R104
+R105
 !i113 1
 R18
 R19

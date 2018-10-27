@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Oct 26 11:24:37 2018
+Analysis & Synthesis Status : Successful - Fri Oct 26 21:47:17 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : laboratorio_VHDL_Luigi
-Top-level Entity Name : maquina_de_estados
+Top-level Entity Name : memoria_ROM_16_bits
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 2
+Total pins : 22
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

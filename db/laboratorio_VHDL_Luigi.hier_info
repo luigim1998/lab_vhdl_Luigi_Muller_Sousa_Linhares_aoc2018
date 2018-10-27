@@ -1,8 +1,40 @@
-|maquina_de_estados
-P => Mux1.IN1
-P => Mux1.IN2
-P => Mux1.IN3
-P => Mux2.IN3
-R <= saida.DB_MAX_OUTPUT_PORT_TYPE
+|memoria_ROM_16_bits
+adress[0] => saida[0].DATAIN
+adress[1] => saida[1].DATAIN
+adress[2] => saida[2].DATAIN
+adress[3] => saida[3].DATAIN
+adress[4] => saida[4].DATAIN
+enable => saida[0].OE
+enable => saida[1].OE
+enable => saida[2].OE
+enable => saida[3].OE
+enable => saida[4].OE
+enable => saida[5].OE
+enable => saida[6].OE
+enable => saida[7].OE
+enable => saida[8].OE
+enable => saida[9].OE
+enable => saida[10].OE
+enable => saida[11].OE
+enable => saida[12].OE
+enable => saida[13].OE
+enable => saida[14].OE
+enable => saida[15].OE
+saida[0] <= saida[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida[3].DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida[4].DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida[5].DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida[6].DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= saida[7].DB_MAX_OUTPUT_PORT_TYPE
+saida[8] <= saida[8].DB_MAX_OUTPUT_PORT_TYPE
+saida[9] <= saida[9].DB_MAX_OUTPUT_PORT_TYPE
+saida[10] <= saida[10].DB_MAX_OUTPUT_PORT_TYPE
+saida[11] <= saida[11].DB_MAX_OUTPUT_PORT_TYPE
+saida[12] <= saida[12].DB_MAX_OUTPUT_PORT_TYPE
+saida[13] <= saida[13].DB_MAX_OUTPUT_PORT_TYPE
+saida[14] <= saida[14].DB_MAX_OUTPUT_PORT_TYPE
+saida[15] <= saida[15].DB_MAX_OUTPUT_PORT_TYPE
 
 

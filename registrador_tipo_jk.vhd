@@ -8,7 +8,7 @@ entity registrador_tipo_jk is
 	Q, Qbar: out std_logic );
 end registrador_tipo_jk;
 
-architecture behv of registrador_tipo_jk is
+architecture behavior of registrador_tipo_jk is
 
    signal state: std_logic;
    signal input: std_logic_vector(1 downto 0);
@@ -36,4 +36,4 @@ begin
    Q <= state;
    Qbar <= not state;
 
-end behv; 
+end behavior; 

@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/26/2018 11:42:33"
+-- Generated on "10/26/2018 19:49:04"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          maquina_de_estados
 -- 
@@ -33,18 +33,21 @@ END maquina_de_estados_vhd_vec_tst;
 ARCHITECTURE maquina_de_estados_arch OF maquina_de_estados_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
+SIGNAL clock : STD_LOGIC;
 SIGNAL P : STD_LOGIC;
 SIGNAL R : STD_LOGIC;
 COMPONENT maquina_de_estados
 	PORT (
+	clock : IN STD_LOGIC;
 	P : IN STD_LOGIC;
-	R : OUT STD_LOGIC
+	R : BUFFER STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
 	i1 : maquina_de_estados
 	PORT MAP (
 -- list connections between master ports and signals
+	clock => clock,
 	P => P,
 	R => R
 	);
@@ -52,14 +55,32 @@ BEGIN
 -- P
 t_prcs_P: PROCESS
 BEGIN
-	FOR i IN 1 TO 8
+	P <= '1';
+	WAIT FOR 50000 ps;
+	FOR i IN 1 TO 9
 	LOOP
 		P <= '0';
-		WAIT FOR 60000 ps;
+		WAIT FOR 50000 ps;
 		P <= '1';
-		WAIT FOR 60000 ps;
+		WAIT FOR 50000 ps;
 	END LOOP;
 	P <= '0';
 WAIT;
 END PROCESS t_prcs_P;
+
+-- clock
+t_prcs_clock: PROCESS
+BEGIN
+	clock <= '1';
+	WAIT FOR 30000 ps;
+	FOR i IN 1 TO 16
+	LOOP
+		clock <= '0';
+		WAIT FOR 30000 ps;
+		clock <= '1';
+		WAIT FOR 30000 ps;
+	END LOOP;
+	clock <= '0';
+WAIT;
+END PROCESS t_prcs_clock;
 END maquina_de_estados_arch;

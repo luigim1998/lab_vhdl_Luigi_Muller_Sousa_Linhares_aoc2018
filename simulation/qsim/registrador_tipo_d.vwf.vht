@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/25/2018 19:43:44"
+-- Generated on "10/26/2018 19:11:45"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          registrador_tipo_d
 -- 
@@ -40,7 +40,7 @@ COMPONENT registrador_tipo_d
 	PORT (
 	clk : IN STD_LOGIC;
 	pin : IN STD_LOGIC;
-	pout : OUT STD_LOGIC
+	pout : BUFFER STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
